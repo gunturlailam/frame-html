@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BERANDA</title>
-</head>
-<body>
-    
-</body>
+
+    <style>
+      body {
+        text-align: center;
+        margin-top: 20%;
+      }
+      .blink {
+        animation: blink-animation 0.5s linear infinite,
+          color-change 1s infinite alternate;
+      }
+
+      @keyframes blink-animation {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes color-change {
+        0% {
+          color: red;
+        }
+        25% {
+          color: yellow;
+        }
+        50% {
+          color: green;
+        }
+        75% {
+          color: blue;
+        }
+        100% {
+          color: purple;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="blink">Selamat Datang Di Website Saya</h1>
+  </body>
 </html>
